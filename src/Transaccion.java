@@ -1,4 +1,4 @@
-public class Transaccion {
+public abstract class Transaccion {
      protected int id;
      protected String tipoCuenta;
      protected double monto;
