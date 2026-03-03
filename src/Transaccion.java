@@ -9,7 +9,8 @@ public abstract class Transaccion {
         this.tipoCuenta = tipoCuenta;
         this.monto = monto;
     }
-    public abstract double calcular(double valor);
+    public abstract double calcularIngreso(double valor);
+    public abstract double calcularResta(double valor);
 
 
     public  double consultarSaldo() {

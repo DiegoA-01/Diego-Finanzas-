@@ -4,9 +4,14 @@ public class Ingreso extends Transaccion {
     }
     
     @Override
-    public double calcular(double ingreso){
+    public double calcularIngreso(double ingreso){
        monto += ingreso;
        return monto;
     } 
-    
+
+    @Override
+    public double calcularResta(double valor) {
+      monto -= valor;
+      return monto; 
+   }
 }

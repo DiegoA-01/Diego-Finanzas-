@@ -7,6 +7,7 @@ public class App {
         Informacion informacion = new Informacion("Diego", "Pineda", "Calarca", 25);
         Transaccion transaccion = new Ingreso(125546, "Nequi", 0);
         
+        
         int menu;
         
         
@@ -24,12 +25,12 @@ public class App {
                 case 1:
                     System.out.println("Su informacion: " + informacion + " \nIngrese monto a agregar: ");
                     double ingreso = scanner.nextDouble();
-                    transaccion.calcular(ingreso);
+                    transaccion.calcularIngreso(ingreso);
                     break;
                 case 2:
                     System.out.println("Su informacion es: " + informacion + " \nIngrese monto a pagar: ");
                     double pago = scanner.nextDouble();
-                    transaccion.calcular(pago);
+                    transaccion.calcularResta(pago);
                     break;
                 case 3:
                     System.out.println("Saldo actual es: " + transaccion.consultarSaldo());
