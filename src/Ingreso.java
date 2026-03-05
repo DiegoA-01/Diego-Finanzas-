@@ -1,6 +1,6 @@
 public class Ingreso extends Transaccion {
-     public Ingreso(int id, String tipoCuenta, double monto){
-        super(id, tipoCuenta, monto);
+     public Ingreso(int id, String tipoCuenta, double monto, String nombre, String apellido, String telefono){
+        super(id, tipoCuenta, monto,nombre,apellido,telefono);
     }
     
     @Override

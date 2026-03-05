@@ -11,10 +11,5 @@ public class Informacion {
         this.edad = edad;
     }
 
-    public void mostrarInfo(){
-        System.out.println("Nombre: " + nombre);
-        System.out.println("Apellido: " + apellido);
-        System.out.println("Direccion: " + direccion);
-        System.out.println("Edad: " + edad);
-    }
+    
 }

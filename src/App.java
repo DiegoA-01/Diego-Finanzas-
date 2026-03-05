@@ -9,7 +9,7 @@ public class App {
         ArrayList<Transaccion> transacciones = new ArrayList<>();
 
         Informacion informacion = new Informacion("Diego", "Pineda", "Calarca", 25);
-        Transaccion transaccion = new Ingreso(125546, "Nequi", 0);
+        Transaccion transaccion = new Ingreso(1201122 , "Nequi", 0, "Diego", "Alejandro", "3022686702");
         
         
         int menu;
@@ -30,7 +30,7 @@ public class App {
                 case 1:
                     System.out.println("Su informacion: " + informacion + " \nIngrese monto a agregar: ");
                     double ingreso = scanner.nextDouble();
-                    Transaccion tIngreso = new Ingreso(125546, "Nequi", ingreso);
+                    Transaccion tIngreso = new Ingreso(125546, "Nequi", ingreso, "Diego", "Alejandro", "3022686702");
                     transacciones.add(tIngreso);
 
                     transaccion.calcularIngreso(ingreso);
@@ -38,7 +38,7 @@ public class App {
                 case 2:
                     System.out.println("Su informacion es: " + informacion + " \nIngrese monto a pagar: ");
                     double pago = scanner.nextDouble();
-                    Transaccion tPago = new Pago(125546, "Nequi", pago);
+                    Transaccion tPago = new Pago(125546, "Nequi", pago, "Diego", "Alejandro", "3022686702");
                     transacciones.add(tPago);
 
                     transaccion.calcularResta(pago);

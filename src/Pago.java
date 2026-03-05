@@ -1,7 +1,7 @@
 public class Pago extends Transaccion {
     
-    public Pago(int id, String tipoCuenta, double monto){
-        super(id, tipoCuenta, monto);
+    public Pago(int id, String tipoCuenta, double monto, String nombre, String apellido, String telefono){
+        super(id, tipoCuenta, monto,nombre,apellido,telefono);
     }
 
     @Override
